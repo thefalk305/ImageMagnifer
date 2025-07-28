@@ -10,7 +10,7 @@
   if (toggleBtn && zoomInput) {
     toggleBtn.addEventListener("click", () => {
       magnifierActive = !magnifierActive;
-
+      toggleBtn.textContent = magnifierActive ? "Disable Magnifier" : "Enable Magnifier";
       if (magnifierActive) {
         const inputVal = zoomInput.value;
         const zoom = parseFloat(inputVal);
@@ -86,5 +86,5 @@
   }
 
   // Optional: Start magnification by default
-  magnify("myimage", 2);
+  // magnify("myimage", 2);
 });
