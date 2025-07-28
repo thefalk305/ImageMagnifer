@@ -1,0 +1,71 @@
+﻿
+body {
+	display: flex;
+	Flex-direction: column;
+	align-items: center;
+	background-image: url('../images/parchment.jpg');
+    background-attachment: fixed;
+}
+
+/*=================== styles for top menu ======================*/
+#topmenu {
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: .90em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	color: inherit;
+	border-top: 2px solid #AB9F5F;
+	border-bottom: 2px solid #AB9F5F;
+}
+#topmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#topmenu li {
+	display: inline;
+	list-style-type: none;
+	padding: 0px;
+	padding-right: 1em;
+}
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  text-align: center;
+  position:relative;
+}
+
+.img-magnifier-container img {
+  display: inline-block; /* Ensures it responds properly to text-align */
+}
+
+
+ /*Set the size of the magnifier glass:*/
+.img-magnifier-glass {
+  position: absolute;
+  border: 1px solid #f00;
+  width: 250px;
+  height: 125px;
+  background-color:white;
+  border-radius: 10px;
+  cursor: none;
+  z-index: 1000;
+  /* Optional: add shadow for style */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+ }
+
+
+.img-magnifier-glass {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  display: block; /* always block, control opacity instead */
+}
+
+.img-magnifier-container:hover .img-magnifier-glass {
+  opacity: 1;
+}
