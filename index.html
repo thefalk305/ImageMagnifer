@@ -36,15 +36,20 @@
   <img id="myimage" src="ChytraPassList.png" width="902" height="1378">
 </div>
 
-<p>Feel free to change the strength of the magnifier glass when initiating the 
+<p style="color: blue" >Feel free to change the strength of the magnifier glass when initiating the 
 magnify function.</p>
+<span style="background-color: antiquewhite;">
+  <button id="magToggle" click="magToggle">Toggle Mag Glass</button>
+
+<label for="magStrength">Enter Mag Strength (1 - 5)</label>
+<input id="magStrength" click="magStrength" type="text" placeHolder="Mag Strength"> 
+</span>
+
+  <!-- Insert the common footer. -->
+  <div id="footer"></div>
+  <script src="./Jscripts/loadFooter.js"></script>
 
 <script src="Jscripts/magimg.js"></script>
-
-
-
-
-
 
 </body>
 </html>
