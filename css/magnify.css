@@ -106,7 +106,7 @@ background-color: #FFFFFF;
 }
 
 #glassToggle {
-	    background-color: beige;
+	    background-color:#EBDF9F;
     height: 60px;
     padding: 10px;
     display: flex;
@@ -116,3 +116,94 @@ background-color: #FFFFFF;
     border: 2px red solid;
     border-radius: 15px;
 	}
+
+	body {
+	font-family: 'Segoe UI', Tahoma, Helvetica, Arial, sans-serif;
+	height: 100%;
+	width: 90%;
+	margin: 70px;
+	padding: 0;
+	color: #000000; /*black*/
+  background-image: url('../images/parchment.jpg'); 
+  background-repeat: repeat; 
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*===============indicates no border around any image ============*/
+body img {
+  width: 100%;
+	border: 0px;
+	text-decoration: none;
+}
+
+/*==============all site links==============*/
+a:link {
+	font-weight: bold;
+	color: red;
+	background: transparent;
+	text-decoration: underline;
+}
+
+a:visited {
+	font-weight: bold;
+	color: purple;
+	background: transparent;
+	padding: 0px;
+	text-decoration: underline wavy rgb(1, 1, 22) 2px;
+}
+
+a:hover {
+	font-weight: bold;
+	text-decoration : none;
+    background: #9da8ce;
+	color: #eee56d;
+}
+
+a:active {
+	font-weight: bold;
+	text-decoration : underline;
+	background: #BFDFE2;
+	color: #726A40;
+}
+
+/* =================Styles for heading tags =============== */
+h1, h2, h3, h4 {
+	color: #485E48; /*dk green*/;
+	background-color: inherit;
+}
+h1 {
+	font-size: 1.5em;
+  text-align: center; 
+  background: #EBDF9F;
+  margin-bottom: 30px;  
+}
+h2 {
+	font-size: 1em;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+	font-size: .9em;
+}
+h4 {
+	font-size: .9em;
+}
+/*============== Styles for footer ===================*/
+#footer {
+	/* border-top: 2px solid #242F24; */
+	clear: both;
+	padding: 5px;
+	text-align: center;
+}
+#footer p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#footer hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 10px 0; /* optional spacing */
+}
